@@ -10,11 +10,6 @@ class FruitDetailedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fruit_detailed)
 
-//val winnerTeam = intent.getStringExtra("WINNER_TEAM")
-//        val winnerLabel : TextView= findViewById(R.id.winnerText)
-//        val trophy : ImageView = findViewById<ImageView>(R.id.trophyImage)
-//winnerLabel.text ="Team $winnerTeam is the winner"
-
         val fruit = intent.getParcelableExtra<Fruit>("Food")
         if(fruit!=null){
 

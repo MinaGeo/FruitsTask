@@ -20,11 +20,6 @@ class MainActivity : AppCompatActivity(){
 
         recyclerView.adapter= fruitsAdapter
 
-//fruitsAdapter.setOnItemClickListener(object :FruitAdapter.onItemClickListener{
-//    override fun onItemClick(position: Int) {
-//        setContentView(R.layout.apple_screen)
-//
-//    }
 
 fruitsAdapter.onItemClick = {
     val intent = Intent(this,FruitDetailedActivity::class.java)
